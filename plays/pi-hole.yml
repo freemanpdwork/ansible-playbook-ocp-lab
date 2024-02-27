@@ -1,0 +1,7 @@
+---
+manage DNS records as code 
+
+SSH to your Pi-hole server
+Run the following command: sudo nano /etc/pihole/pihole-FTL.conf
+Append the following setting to this file and save the file: BLOCK_ICLOUD_PR=false
+Either restart your Pi-hole server, or just restart the DNS Resolver service with pihole restartdns
