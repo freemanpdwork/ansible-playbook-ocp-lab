@@ -1,12 +1,36 @@
 ---
+3 controllers ?
+3 workers Dell r730
+
 ACS
 ACM
 AAP
-Virtulization 
-OCP AI
+Virtulization note: set seperate storage class to storageclass.kubevirt.io/is-default-virt-class to "true"
 Compliance Operator
 Red Hat OpenShift Service Mesh
 File Integrity Operator
 Red Hat OpenShift GitOps
 Red Hat OpenShift Pipelines
 Satellite VM with Satellite installed - expose network, configure default user
+OpenShift dev spaces
+OpenShift Data Foundation
+
+### OCP AI ###
+OpenShift Pipelines: release notes
+OpenShift Serverless: release notes
+OpenShift ServiceMesh: release notes
+Node Feature Discovery Operator: documentation
+NVIDIA GPU Operator: documentation
+HabanaAI Operator: documentation
+
+### Other operators
+Web Terminal
+
+Fix of knative pod krash backoff https://access.redhat.com/solutions/7024400
+
+Figure out LVM Storage Operator
+
+
+SNO requirement? oc patch configs.imageregistry.operator.openshift.io cluster --type merge --patch '{"spec":{"storage":{"emptyDir":{}}}}'
+
+
